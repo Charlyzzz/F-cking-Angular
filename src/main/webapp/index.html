@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" ng-app="twitterApp">
+
+<head>
+<meta charset="utf-8">
+<title>Twitter</title>
+
+<!-- ANGULAR -->
+<script src="node_modules/angular/angular.min.js"></script>
+
+<!-- código de nuestro ejemplo -->
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/services.js"></script>
+
+</head>
+
+<body ng-controller="TwitterController">
+
+	<div ng-repeat="t in tweets">{{t|json}}</div>
+
+</body>
+</html>
+

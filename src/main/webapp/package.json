@@ -1,0 +1,19 @@
+{
+  "name": "twitterApp",
+  "version": "1.0.0",
+  "description": "Lorem Ipsum",
+  "main": "index.html",
+  "private": true,
+  "dependencies": {
+    "angular": "^1.4.1"   
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angularjs"
+  ],
+  "author": "",
+  "license": "ISC"
+}
