@@ -1,0 +1,8 @@
+.settings
+target
+.classpath
+.project
+.tern-project
+src/main/generated-sources
+
+src/main/webapp/node_modules
