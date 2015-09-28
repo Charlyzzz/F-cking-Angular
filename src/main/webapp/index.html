@@ -13,12 +13,38 @@
 <script src="js/controllers.js"></script>
 <script src="js/services.js"></script>
 
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 </head>
 
 <body ng-controller="TwitterController">
 
-	<div ng-repeat="t in tweets">{{t|json}}</div>
+	<div class="page-header">
+		<h1>
+			Angular para trompas <small> .>> <3 <<. </small>
+		</h1>
+	</div>
+	{{tweets|json}}
+	<div ng-repeat="tweet in tweets"><br>
+		{{tweet|json}} <br> 
+		{{tweet.texto}}<br>
+		{{tweet.creador|json}}<br>
+		{{tweet.creador.nombre}}<br>
+		{{tweet.fecha | date}}<br>>
+	    {{tweet.retweets}}<br>>
+	 
 
+	</div>
 </body>
 </html>
 
